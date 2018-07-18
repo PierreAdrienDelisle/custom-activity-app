@@ -1,0 +1,17 @@
+{
+	"name": "custom-activity-app",
+	"description": "A quick start package for NodeJs custom app in JourneyBuilder",
+	"version": "1.0.1",
+	"main": "backend/server.js",
+	"scripts": {
+		"start": "node backend/server.js"
+	},
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.3",
+		"fuelsdk-node": "^2.1.0",
+		"user": "0.0.0",
+		"util": "^0.11.0"
+	},
+	"author": "Pierre-Adrien Delisle <pa.delisle@ikumbi-solutions.com>"
+}

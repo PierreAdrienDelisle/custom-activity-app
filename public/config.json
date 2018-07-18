@@ -1,0 +1,76 @@
+{
+  "key": "<CUSTOM ACTIVITY KEY>",
+  "metaData": {
+    "icon": "images/icon.png",
+    "iconSmall": "images/icon_small.png"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "<NAME>",
+      "description": "<DESCRIPTION>"
+    }
+  },
+  "workflowApiVersion": "1.1",
+  "configurationArguments": {
+    "applicationExtensionKey": "<CUSTOM ACTIVITY KEY>",
+    "save": {
+      "url": "https://<URL>/activity/save",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    },
+    "publish": {
+      "url": "https://<URL>/activity/publish",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    },
+    "validate": {
+      "url": "https://<URL>/activity/validate",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    }
+  },
+  "wizardSteps": [
+    {
+      "key": "eventdefinitionkey",
+      "label": "Event Definition Key"
+    }
+  ],
+  "outcomes": [
+    {
+      "key": "rest-1-outcome-1",
+      "next": "<key of next activity>"
+    }
+  ],
+  "userInterfaces": {
+    "runningModal": {
+      "url": "runningModal.html"
+    },
+    "runningHover": {
+      "url": "runningHover.html"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://<URL>/activity/execute",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 90000
+    }
+  },
+  "edit": {
+    "url": "https://<URL>/index.html",
+    "height": 400,
+    "width": 500
+  }
+
+
+}
