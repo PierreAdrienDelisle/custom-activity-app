@@ -100,7 +100,7 @@ define(function (require) {
         payload['arguments'].execute = payload['arguments'].execute || {};
 
         //Mise en place du payload
-        payload['arguments'].execute.inArguments = [];
+        payload['arguments'].execute.inArguments = [{}];
 
         //On récupère l'id de la DE d'origine et ses colonnes (OPTIONNEL)
         for (var i = 0; i < deFields.length; i++) {
