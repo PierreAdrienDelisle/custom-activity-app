@@ -28,6 +28,7 @@ app.post('/activity/execute', (req, res) => {
     let arg = req.body.inArguments[0]; //Récupère les arguments donnés par l'interface (customActivity.js)
     //Traitement sur les contacts...
     console.log('Hello world !'); //Chaque contact va faire un "Hello world !"
+    return res.status(200).json({ success: true });
 });
 
 
